@@ -7,6 +7,7 @@ $errors = [
   'register' => $_SESSION['register_error'] ?? ''
 ];
 $activeFOrm = $_SESSION['active_form'] ?? 'login';
+$activeForm = isset($_GET['form']) ? $_GET['form'] : 'register';
 
 session_unset();
 
